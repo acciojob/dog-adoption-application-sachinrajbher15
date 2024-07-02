@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="form-container">
+        <h2>Dog Adoption Application</h2>
+        <form id="dogAdoptionForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
 
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="livedWithDog">
+                    <input type="checkbox" id="livedWithDog" name="livedWithDog" value="Have you ever lived with a Dog before?"> Have you ever lived with a Dog before?
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="preferredBreeds">Please select your preferred breeds:</label>
+                <select id="preferredBreeds" name="preferredBreeds" multiple required>
+                    <option value="labrador">Labrador Retriever</option>
+                    <option value="germanShepherd">German Shepherd</option>
+                    <option value="goldenRetriever">Golden Retriever</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="beagle">Beagle</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
